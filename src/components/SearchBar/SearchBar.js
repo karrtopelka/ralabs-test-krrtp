@@ -1,11 +1,4 @@
-import {
-  Card,
-  Container,
-  Input,
-  Keyboard,
-  Text,
-  Tooltip,
-} from '@geist-ui/react';
+import { Card, Container, Input, Text, Tooltip } from '@geist-ui/react';
 import React, { useState } from 'react';
 import API from '../../config';
 
@@ -24,7 +17,7 @@ const SearchBar = ({ setWeather }) => {
 
   return (
     <Card shadow>
-      <Container alignItems="center" justify="space-around">
+      <Container justify="space-around">
         <Text h3 style={{ margin: 0 }}>
           Search location
         </Text>
