@@ -11,10 +11,12 @@ const App = () => {
   };
 
   return (
-    <GeistProvider themeType={themeType}>
-      <CssBaseline />
-      <PageLayout switchThemes={switchThemes} themeType={themeType} />
-    </GeistProvider>
+    <div style={{ marginTop: 11 }}>
+      <GeistProvider themeType={themeType}>
+        <CssBaseline />
+        <PageLayout switchThemes={switchThemes} themeType={themeType} />
+      </GeistProvider>
+    </div>
   );
 };
 
