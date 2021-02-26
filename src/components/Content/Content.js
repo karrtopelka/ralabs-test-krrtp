@@ -1,4 +1,4 @@
-import { Col, Row, Spacer } from '@geist-ui/react';
+import { Col, Row, Spacer, useMediaQuery, useToasts } from '@geist-ui/react';
 import React, { useEffect, useState } from 'react';
 import API from '../../config';
 import SearchBar from '../SearchBar/SearchBar';
@@ -6,6 +6,8 @@ import WeatherInfo from '../WeatherInfo/WeatherInfo';
 
 const Content = () => {
   const [weather, setWeather] = useState({});
+  const isSM = useMediaQuery('sm', { match: 'down' });
+  const [, setToast] = useToasts();
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
@@ -19,7 +21,11 @@ const Content = () => {
           });
       },
       (errorObj) => {
-        alert(errorObj.message);
+        setToast({
+          text: errorObj.message,
+          type: 'error',
+          delay: 3000,
+        });
       },
       { enableHighAccuracy: true, maximumAge: 10000 },
     );
@@ -28,19 +34,19 @@ const Content = () => {
   return (
     <>
       <Row>
-        <Col span={4} />
+        {!isSM && <Col span={4} />}
         <Col>
           <SearchBar setWeather={setWeather} />
         </Col>
-        <Col span={4} />
+        {!isSM && <Col span={4} />}
       </Row>
       <Spacer y={2} />
       <Row>
-        <Col span={4} />
+        {!isSM && <Col span={4} />}
         <Col>
           <WeatherInfo weather={weather} />
         </Col>
-        <Col span={4} />
+        {!isSM && <Col span={4} />}
       </Row>
     </>
   );

@@ -1,11 +1,11 @@
-import { Card, Col, Grid, Row, Text } from '@geist-ui/react';
+import { Col, Grid, Row, Text, useMediaQuery } from '@geist-ui/react';
 import React from 'react';
 import datebuilder from '../../features/datebuilder';
 import iconSwitcher from '../../features/iconSwitcher';
 import InfoItem from '../InfoItem/InfoItem';
 
 const Info = ({ weather }) => {
-  console.log(weather);
+  const isSM = useMediaQuery('xs', { match: 'down' });
   return (
     <Grid.Container gap={2} justify="center">
       <Grid xs={24} style={{ paddingBottom: 0 }}>
@@ -45,7 +45,7 @@ const Info = ({ weather }) => {
       <Grid xs={24} style={{ paddingTop: 0, margin: -10 }}>
         <InfoItem>
           <Row>
-            <Col span={64} />
+            {!isSM && <Col span={64} />}
             <Col>
               <div style={{ display: 'flex' }}>
                 <Col>
@@ -66,7 +66,7 @@ const Info = ({ weather }) => {
                 </Col>
               </div>
             </Col>
-            <Col span={64} />
+            {!isSM && <Col span={64} />}
           </Row>
         </InfoItem>
       </Grid>

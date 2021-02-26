@@ -1,4 +1,4 @@
-import { Page } from '@geist-ui/react';
+import { Page, useMediaQuery } from '@geist-ui/react';
 import React from 'react';
 import Content from '../Content/Content';
 import Footer from '../Footer/Footer';
@@ -6,6 +6,7 @@ import Header from '../Header/Header';
 import './PageLayout.css';
 
 const PageLayout = ({ switchThemes, themeType }) => {
+  const isXS = useMediaQuery('xs', { match: 'down' });
   return (
     <Page>
       <Page.Header>
@@ -14,9 +15,11 @@ const PageLayout = ({ switchThemes, themeType }) => {
       <Page.Content>
         <Content />
       </Page.Content>
-      <Page.Footer style={{ margin: 5 }}>
-        <Footer />
-      </Page.Footer>
+      {!isXS && (
+        <Page.Footer>
+          <Footer />
+        </Page.Footer>
+      )}
     </Page>
   );
 };
