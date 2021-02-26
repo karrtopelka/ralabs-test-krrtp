@@ -1,5 +1,5 @@
 import './App.css';
-import { Button, CssBaseline, GeistProvider } from '@geist-ui/react';
+import { CssBaseline, GeistProvider } from '@geist-ui/react';
 import { useState } from 'react';
 import PageLayout from './components/PageLayout/PageLayout';
 
