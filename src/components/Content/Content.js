@@ -40,7 +40,7 @@ const Content = () => {
         </Col>
         {!isSM && <Col span={4} />}
       </Row>
-      <Spacer y={2} />
+      <Spacer y={1} />
       <Row>
         {!isSM && <Col span={4} />}
         <Col>
