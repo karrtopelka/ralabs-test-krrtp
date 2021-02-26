@@ -1,8 +1,18 @@
-import { Card, Container, Grid, Input, Text, Tooltip } from '@geist-ui/react';
+import {
+  Card,
+  Container,
+  Grid,
+  Input,
+  Keyboard,
+  Text,
+  Tooltip,
+  useMediaQuery,
+} from '@geist-ui/react';
 import React, { useState } from 'react';
 import API from '../../config';
 
 const SearchBar = ({ setWeather }) => {
+  const isXS = useMediaQuery('xs', { match: 'down' });
   const [query, setQuery] = useState('');
   const search = (evt) => {
     if (evt.key === 'Enter') {
@@ -24,7 +34,17 @@ const SearchBar = ({ setWeather }) => {
           </Text>
         </Grid>
         <Grid>
-          <Tooltip text={`Then hit Enter`} trigger="click" type="dark">
+          <Tooltip
+            text={
+              <>
+                Then hit {` `}
+                <Keyboard>Enter</Keyboard>
+              </>
+            }
+            trigger="click"
+            type="dark"
+            placement={isXS ? 'bottom' : 'top'}
+          >
             <Input
               type="text"
               placeholder="Search..."
