@@ -1,4 +1,4 @@
-import { Card, Container, Input, Text, Tooltip } from '@geist-ui/react';
+import { Card, Container, Grid, Input, Text, Tooltip } from '@geist-ui/react';
 import React, { useState } from 'react';
 import API from '../../config';
 
@@ -17,20 +17,24 @@ const SearchBar = ({ setWeather }) => {
 
   return (
     <Card shadow>
-      <Container justify="space-around">
-        <Text h3 style={{ margin: 0 }}>
-          Search location
-        </Text>
-        <Tooltip text={`Then hit Enter`} trigger="click" type="dark">
-          <Input
-            type="text"
-            placeholder="Search..."
-            onChange={(e) => setQuery(e.target.value)}
-            value={query}
-            onKeyPress={search}
-          />
-        </Tooltip>
-      </Container>
+      <Grid.Container gap={1} justify="space-around">
+        <Grid>
+          <Text h3 style={{ margin: 0 }}>
+            Search location
+          </Text>
+        </Grid>
+        <Grid>
+          <Tooltip text={`Then hit Enter`} trigger="click" type="dark">
+            <Input
+              type="text"
+              placeholder="Search..."
+              onChange={(e) => setQuery(e.target.value)}
+              value={query}
+              onKeyPress={search}
+            />
+          </Tooltip>
+        </Grid>
+      </Grid.Container>
     </Card>
   );
 };
