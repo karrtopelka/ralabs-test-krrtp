@@ -10,6 +10,18 @@ const Info = ({ weather }) => {
     <Grid.Container gap={2} justify="center">
       <Grid xs={24} style={{ paddingBottom: 0 }}>
         <InfoItem>
+          <Text
+            p
+            size={12}
+            text-align="center"
+            style={{ margin: 0, color: '#ccc' }}
+          >
+            {datebuilder(new Date())}
+          </Text>
+        </InfoItem>
+      </Grid>
+      <Grid xs={24} style={{ paddingBottom: 0 }}>
+        <InfoItem>
           <Text h3 text-align="center" style={{ margin: 0 }}>
             {weather.name}, {weather.sys.country}
           </Text>
@@ -25,7 +37,7 @@ const Info = ({ weather }) => {
       <Grid xs={24}>
         <InfoItem>{iconSwitcher(weather.weather[0].main)}</InfoItem>
       </Grid>
-      <Grid xs={24} style={{ paddingBottom: 0 }}>
+      <Grid xs={24} style={{ paddingBottom: 0, paddingTop: 0 }}>
         <InfoItem>
           <Text h1>{Math.round(weather.main.temp)}°C</Text>
         </InfoItem>
@@ -57,9 +69,6 @@ const Info = ({ weather }) => {
             <Col span={64} />
           </Row>
         </InfoItem>
-      </Grid>
-      <Grid xs={24}>
-        <Card style={{ width: '100%' }}>{datebuilder(new Date())}</Card>
       </Grid>
     </Grid.Container>
   );
