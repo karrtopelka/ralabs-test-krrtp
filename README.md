@@ -64,28 +64,28 @@ Hope it helps.
 
 > light
 
-![desktop](src/assets/screenshots/desktop.png | height=100)
+![desktop](src/assets/screenshots/desktop.png =100x)
 
 > dark
 
-![desktop_dark](src/assets/screenshots/desktop_night.png | height=100)
+![desktop_dark](src/assets/screenshots/desktop_night.png =100x)
 
 ### IPhone 8 Plus version
 
 > light
 
-![iphone8+](src/assets/screenshots/iphone8plus.jpg | height=100)
+![iphone8+](src/assets/screenshots/iphone8plus.jpg =100x)
 
 > dark
 
-![iphone8+_dark](src/assets/screenshots/iphone8plus_night.jpg | height=100)
+![iphone8+_dark](src/assets/screenshots/iphone8plus_night.jpg =100x)
 
 ### IPhone 6 version
 
 > light
 
-![iphone6](src/assets/screenshots/iphone6.jpg | height=100)
+![iphone6](src/assets/screenshots/iphone6.jpg =100x)
 
 > dark
 
-![iphone6_dark](src/assets/screenshots/iphone6_night.jpg | height=100)
+![iphone6_dark](src/assets/screenshots/iphone6_night.jpg =100x)
