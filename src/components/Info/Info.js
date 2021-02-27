@@ -9,7 +9,6 @@ import MinMax from '../MinMax/MinMax';
 import WeatherType from '../WeatherType/WeatherType';
 
 const Info = ({ weather }) => {
-  console.log(weather);
   const isSM = useMediaQuery('xs', { match: 'down' });
   return (
     <Grid.Container gap={2} justify="center">
