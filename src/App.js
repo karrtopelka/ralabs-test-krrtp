@@ -1,4 +1,3 @@
-import './App.css';
 import { CssBaseline, GeistProvider } from '@geist-ui/react';
 import { useState } from 'react';
 import PageLayout from './components/PageLayout/PageLayout';
@@ -11,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div style={{ marginTop: 11 }}>
+    <div>
       <GeistProvider themeType={themeType}>
         <CssBaseline />
         <PageLayout switchThemes={switchThemes} themeType={themeType} />

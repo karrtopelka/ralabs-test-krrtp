@@ -1,12 +1,11 @@
-import { Button, Grid, Text } from '@geist-ui/react';
+import { Button, Col, Row, Text } from '@geist-ui/react';
 import { CloudLightning, Moon, Sun } from '@geist-ui/react-icons';
 import React from 'react';
-import './Header.css';
 
 const Header = ({ switchThemes, themeType }) => {
   return (
-    <Grid.Container gap={2} justify="space-between" alignItems="center">
-      <Grid>
+    <Row justify="space-between" style={{ paddingTop: 10 }}>
+      <Col>
         <Text h4 style={{ margin: 0 }}>
           Karrtopelka
           <span style={{ paddingLeft: 10, paddingRight: 10 }}>
@@ -17,8 +16,8 @@ const Header = ({ switchThemes, themeType }) => {
           </span>
           weather
         </Text>
-      </Grid>
-      <Grid>
+      </Col>
+      <Col style={{ textAlign: 'right' }}>
         <Button
           type={themeType === 'light' ? 'success' : 'warning'}
           ghost
@@ -27,8 +26,8 @@ const Header = ({ switchThemes, themeType }) => {
           size="small"
           onClick={switchThemes}
         />
-      </Grid>
-    </Grid.Container>
+      </Col>
+    </Row>
   );
 };
 

@@ -1,26 +1,25 @@
-import { Grid, Text } from '@geist-ui/react';
+import { Col, Row, Text } from '@geist-ui/react';
 import { Activity } from '@geist-ui/react-icons';
 import React from 'react';
-import './Footer.css';
 
 const Footer = () => {
   return (
-    <Grid.Container justify="space-between" alignItems="center">
-      <Grid xs={6}>
-        <Text h4 style={{ margin: 0 }}>
+    <Row gap={2} justify="space-between" style={{ paddingBottom: 10 }}>
+      <Col>
+        <Text p style={{ margin: 0 }}>
           {new Date().getFullYear()}
         </Text>
-      </Grid>
-      <Grid xs={6}>
-        <Text h4 style={{ margin: 0 }}>
+      </Col>
+      <Col style={{ textAlign: 'right' }}>
+        <Text p style={{ margin: 0 }}>
           Ralabs{' '}
           <span>
             <Activity size={16} />
           </span>{' '}
           Karrtopelka
         </Text>
-      </Grid>
-    </Grid.Container>
+      </Col>
+    </Row>
   );
 };
 
