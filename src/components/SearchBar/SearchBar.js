@@ -9,18 +9,26 @@ import {
 } from '@geist-ui/react';
 import React, { useState } from 'react';
 import API from '../../config';
+import { checkCookie, setCookie } from '../../features/cookies';
 
 const SearchBar = ({ setWeather }) => {
   const isXS = useMediaQuery('xs', { match: 'down' });
   const [query, setQuery] = useState('');
   const search = (evt) => {
     if (evt.key === 'Enter') {
-      fetch(`${API.base}weather?q=${query}&units=metric&appid=${API.key}`)
-        .then((res) => res.json())
-        .then((r) => {
-          setQuery('');
-          setWeather(r);
-        });
+      const cookie = checkCookie(query);
+      if (cookie) {
+        setQuery('');
+        setWeather(JSON.parse(cookie));
+      } else {
+        fetch(`${API.base}weather?q=${query}&units=metric&appid=${API.key}`)
+          .then((res) => res.json())
+          .then((r) => {
+            setQuery('');
+            setWeather(r);
+            setCookie(query, r);
+          });
+      }
     }
   };
 

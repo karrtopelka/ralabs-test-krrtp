@@ -11,6 +11,23 @@ const Content = () => {
   const [, setToast] = useToasts();
 
   useEffect(() => {
+    const agreement = checkCookie('agreement');
+    if (!agreement) {
+      setToast({
+        text: 'This site uses cookie, do you agree to them?',
+        type: 'warning',
+        delay: 50000,
+        actions: [
+          {
+            name: 'Agree',
+            handler: (event, cancel) => {
+              setCookie('agreement', true);
+              cancel();
+            },
+          },
+        ],
+      });
+    }
     const cookie = checkCookie();
     if (cookie) {
       setWeather(JSON.parse(cookie));
@@ -23,7 +40,7 @@ const Content = () => {
             .then((res) => res.json())
             .then((r) => {
               setWeather(r);
-              setCookie(r);
+              setCookie('local_weather', r);
             });
         },
         (errorObj) => {

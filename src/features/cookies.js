@@ -1,7 +1,7 @@
-const setCookie = (value) => {
+const setCookie = (c_name = 'local_weather', value) => {
   let exdate = new Date();
   exdate.setDate(exdate.getMinutes() + 10);
-  document.cookie = `weather = ${JSON.stringify(value)}`;
+  document.cookie = `${c_name} = ${JSON.stringify(value)}`;
 };
 
 const getCookie = (c_name) => {
@@ -19,8 +19,8 @@ const getCookie = (c_name) => {
   }
 };
 
-const checkCookie = () => {
-  let w = getCookie('weather');
+const checkCookie = (c_name = 'local_weather') => {
+  let w = getCookie(c_name);
   if (w) {
     return w;
   } else {
