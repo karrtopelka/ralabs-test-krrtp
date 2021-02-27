@@ -6,13 +6,13 @@ Karrtopelka weather is the test task for me from Ralabs
 
 Open the console and locate into your folder (for example):
 
-```shell
+```properties
 D:\ralabs-clone>
 ```
 
 Then type:
 
-```shell
+```properties
 git init
 ```
 
@@ -22,7 +22,7 @@ You should see a message like:
 
 Type (copy-paste):
 
-```shell
+```properties
 git clone https://github.com/karrtopelka/ralabs-test-krrtp.git
 ```
 
@@ -32,19 +32,19 @@ git clone https://github.com/karrtopelka/ralabs-test-krrtp.git
 
 Navigate to cloned folder:
 
-```shell
+```properties
 cd ralabs-test-krrtp
 ```
 
 And now you need to install all missing packages from package.json. So you simply need to type:
 
-```shell
+```properties
 npm install
 ```
 
 It takes a while, but when downloading is completed, you can type:
 
-```shell
+```properties
 yarn start
 ```
 
@@ -52,7 +52,7 @@ yarn start
 
 If you're using VSCode, go to your shell, hit <kbd>Ctrl</kbd> + <kbd>C</kbd>, and then write:
 
-```shell
+```properties
 code .
 ```
 
