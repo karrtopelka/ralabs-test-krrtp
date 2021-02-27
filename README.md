@@ -57,3 +57,35 @@ code .
 ```
 
 Hope it helps.
+
+## Screenshots of the application
+
+### Desktop version
+
+> light
+
+![desktop](src/assets/screenshots/desktop.png)
+
+> dark
+
+![desktop_dark](src/assets/screenshots/desktop_night.png)
+
+### IPhone 8 Plus version
+
+> light
+
+![iphone8+](src/assets/screenshots/iphone8plus.jpg)
+
+> dark
+
+![iphone8+_dark](src/assets/screenshots/iphone8plus_night.jpg)
+
+### IPhone 6 version
+
+> light
+
+![iphone6](src/assets/screenshots/iphone6.jpg)
+
+> dark
+
+![iphone6_dark](src/assets/screenshots/iphone6_night.jpg)
