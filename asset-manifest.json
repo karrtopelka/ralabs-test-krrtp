@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/ralabs-test-krrtp/static/css/main.f71896aa.chunk.css",
-    "main.js": "/ralabs-test-krrtp/static/js/main.22ff89d6.chunk.js",
-    "main.js.map": "/ralabs-test-krrtp/static/js/main.22ff89d6.chunk.js.map",
+    "main.js": "/ralabs-test-krrtp/static/js/main.c92efb5b.chunk.js",
+    "main.js.map": "/ralabs-test-krrtp/static/js/main.c92efb5b.chunk.js.map",
     "runtime-main.js": "/ralabs-test-krrtp/static/js/runtime-main.213e105c.js",
     "runtime-main.js.map": "/ralabs-test-krrtp/static/js/runtime-main.213e105c.js.map",
-    "static/js/2.9872f509.chunk.js": "/ralabs-test-krrtp/static/js/2.9872f509.chunk.js",
-    "static/js/2.9872f509.chunk.js.map": "/ralabs-test-krrtp/static/js/2.9872f509.chunk.js.map",
+    "static/js/2.64bcbf99.chunk.js": "/ralabs-test-krrtp/static/js/2.64bcbf99.chunk.js",
+    "static/js/2.64bcbf99.chunk.js.map": "/ralabs-test-krrtp/static/js/2.64bcbf99.chunk.js.map",
     "static/js/3.4eb9e279.chunk.js": "/ralabs-test-krrtp/static/js/3.4eb9e279.chunk.js",
     "static/js/3.4eb9e279.chunk.js.map": "/ralabs-test-krrtp/static/js/3.4eb9e279.chunk.js.map",
     "index.html": "/ralabs-test-krrtp/index.html",
     "static/css/main.f71896aa.chunk.css.map": "/ralabs-test-krrtp/static/css/main.f71896aa.chunk.css.map",
-    "static/js/2.9872f509.chunk.js.LICENSE.txt": "/ralabs-test-krrtp/static/js/2.9872f509.chunk.js.LICENSE.txt"
+    "static/js/2.64bcbf99.chunk.js.LICENSE.txt": "/ralabs-test-krrtp/static/js/2.64bcbf99.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.213e105c.js",
-    "static/js/2.9872f509.chunk.js",
+    "static/js/2.64bcbf99.chunk.js",
     "static/css/main.f71896aa.chunk.css",
-    "static/js/main.22ff89d6.chunk.js"
+    "static/js/main.c92efb5b.chunk.js"
   ]
 }
