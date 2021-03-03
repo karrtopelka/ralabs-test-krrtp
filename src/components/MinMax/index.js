@@ -1,6 +1,6 @@
 import { Col, Grid } from '@geist-ui/react';
 import React from 'react';
-import SmallColumn from '../SmallColumn/SmallColumn';
+import SmallColumn from '../SmallColumn';
 
 const MinMax = ({ isSM, weather }) => {
   return (

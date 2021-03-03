@@ -1,6 +1,6 @@
 import { Card, Text } from '@geist-ui/react';
 import React from 'react';
-import Info from '../Info/Info';
+import Info from '../Info';
 
 const WeatherInfo = ({ weather }) => {
   return (

@@ -1,7 +1,7 @@
 import { Text } from '@geist-ui/react';
 import React from 'react';
 import datebuilder from '../../features/datebuilder';
-import InfoItem from '../InfoItem/InfoItem';
+import InfoItem from '../InfoItem';
 
 const DateDisplay = () => {
   return (

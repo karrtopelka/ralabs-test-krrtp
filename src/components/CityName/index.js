@@ -1,6 +1,6 @@
 import { Text } from '@geist-ui/react';
 import React from 'react';
-import InfoItem from '../InfoItem/InfoItem';
+import InfoItem from '../InfoItem';
 
 const CityName = ({ weather }) => {
   return (

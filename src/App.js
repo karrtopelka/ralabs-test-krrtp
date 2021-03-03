@@ -1,6 +1,6 @@
 import { CssBaseline, GeistProvider } from '@geist-ui/react';
 import { useState } from 'react';
-import PageLayout from './components/PageLayout/PageLayout';
+import PageLayout from './components/PageLayout/';
 
 const App = () => {
   const [themeType, setThemeType] = useState('light');

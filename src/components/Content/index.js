@@ -2,8 +2,8 @@ import { Col, Row, Spacer, useMediaQuery, useToasts } from '@geist-ui/react';
 import React, { useEffect, useState } from 'react';
 import API from '../../config';
 import { checkCookie, setCookie } from '../../features/cookies';
-import SearchBar from '../SearchBar/SearchBar';
-import WeatherInfo from '../WeatherInfo/WeatherInfo';
+import SearchBar from '../SearchBar';
+import WeatherInfo from '../WeatherInfo';
 
 const Content = () => {
   const [weather, setWeather] = useState({});

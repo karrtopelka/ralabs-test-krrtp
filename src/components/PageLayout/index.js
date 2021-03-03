@@ -1,8 +1,8 @@
 import { Button, Page, Text, useMediaQuery } from '@geist-ui/react';
 import { Activity, Moon, Sun } from '@geist-ui/react-icons';
 import React from 'react';
-import Bar from '../Bar/Bar';
-import Content from '../Content/Content';
+import Bar from '../Bar';
+import Content from '../Content';
 
 const PageLayout = ({ switchThemes, themeType }) => {
   const isXS = useMediaQuery('xs', { match: 'down' });

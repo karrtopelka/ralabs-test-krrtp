@@ -1,6 +1,6 @@
 import { Col, Grid, useMediaQuery } from '@geist-ui/react';
 import React from 'react';
-import SmallColumn from '../SmallColumn/SmallColumn';
+import SmallColumn from '../SmallColumn';
 
 const AdditionalRow = ({ isSM, weather }) => {
   const isXS = useMediaQuery('xs', { match: 'down' });

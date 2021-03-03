@@ -1,12 +1,12 @@
 import { Grid, Text, useMediaQuery } from '@geist-ui/react';
 import React from 'react';
 import iconSwitcher from '../../features/iconSwitcher';
-import AdditionalRow from '../AdditionalRow/AdditionalRow';
-import CityName from '../CityName/CityName';
-import DateDisplay from '../DateDisplay/DateDisplay';
-import InfoItem from '../InfoItem/InfoItem';
-import MinMax from '../MinMax/MinMax';
-import WeatherType from '../WeatherType/WeatherType';
+import AdditionalRow from '../AdditionalRow';
+import CityName from '../CityName';
+import DateDisplay from '../DateDisplay';
+import InfoItem from '../InfoItem';
+import MinMax from '../MinMax';
+import WeatherType from '../WeatherType';
 
 const Info = ({ weather }) => {
   const isSM = useMediaQuery('xs', { match: 'down' });
