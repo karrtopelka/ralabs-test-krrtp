@@ -1,6 +1,7 @@
 # Karrtopelka weather app 🌩
 
 Karrtopelka weather is the test task for me from Ralabs
+[link to demo](https://karrtopelka.github.io/ralabs-test-krrtp/)
 
 ## Installation
 
